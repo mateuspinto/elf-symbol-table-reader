@@ -19,10 +19,10 @@ CFLAGS :=-O2 -march=native
 export CROSS_COMPILE
 
 all:
-	$(AS) main.c -o elf-reader.elf $(CFLAGS) $(LFLAGS)
+	$(AS) main.c -o elf-reader $(CFLAGS) $(LFLAGS)
 
 test:
-	@$(MAKE) --no-print-directory all && ./elf-reader.elf elf-reader.elf
+	@$(MAKE) --no-print-directory all && ./elf-reader elf-reader
 
 clean:
-	rm -f elf-reader.elf
+	rm -f elf-reader

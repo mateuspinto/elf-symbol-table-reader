@@ -46,10 +46,10 @@ int main(int argc, char **argv)
         iterator_print++;
 
         //value
-        printf("0x%.8x", sym.st_value);
+        printf("0x%.8lu", sym.st_value);
 
         //size
-        printf(" 0x%.8x", sym.st_size);
+        printf(" 0x%.8lu", sym.st_size);
 
         //type
         switch (sym.st_info) {
