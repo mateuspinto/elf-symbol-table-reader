@@ -1,6 +1,6 @@
-CC      := $(CROSS_COMPILE)gcc -xc
-CXX     := $(CROSS_COMPILE)gcc -xc++
-AS      := $(CROSS_COMPILE)gcc
+CC      := $(CROSS_COMPILE)cc -xc
+CXX     := $(CROSS_COMPILE)cc -xc++
+AS      := $(CROSS_COMPILE)cc
 AR      := $(CROSS_COMPILE)ar
 LD      := $(CROSS_COMPILE)g++
 NM      := $(CROSS_COMPILE)nm
